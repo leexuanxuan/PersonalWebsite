@@ -1,5 +1,5 @@
 function reveal() {
-  console.log('Function executed');  // Add this line
+  console.log('Function executed');
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
