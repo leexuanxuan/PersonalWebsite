@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>      
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <meta name="description" content="Personal portfolio website">
+        <title> Lee Xuan Xuan </title>
+        <link rel="stylesheet" href="css/styles.css"> <!-- references to styles.css file in css folder -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- preload google fonts api-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- preload api for dealing with static content-->
+         <!--
+        <link
+            href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:ital,wght@0,100;0,400;0,700;1,400&family=barlow:wght@0,100;0,400;0,700&display=swap"
+            rel="stylesheet">
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+        
+    </head>
+    <body>
+        <!-- page shown after visitors load in-->
+        <div class="main reveal">
+            <div class="navBar">
+                <a href="#about"> About</a>
+                <a href="#proj"> Projects</a>
+                <a href="#cert"> Certificates</a>
+                <a href="#lang"> Languages</a>
+                <a href="#hobby"> Hobbies</a>
+                <a href="#contact-me"> Contact me</a>
+            </div>
+
+            <!-- picture, name, punchline-->
+            <div class="main-description">
+                <div class="bgimg-1">
+                    <div class="caption">
+                        <span class="oneLiner"> Welcome! I'm Lee Xuan Xuan. 
+                        I am an aspiring Tech Professional.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- after scrolling -->
+        <div class="body" id="about">
+            <!-- About section (descriptor)-->
+            <div class="intro reveal">
+                <h3>About Me</h3>
+                <p>
+                    I'm an inquisitive bibliophile with a penchant for 
+                    personal growth, philosophy, fitness and programming.
+                    My love for programming was sparked from appreciation 
+                    of the way programming utilizes both logic and creativity to 
+                    build things with practical value. The applications are vast and 
+                    the possibilities are limitless!
+                </p>
+                <p>
+                    I have great writing and communicative skills. 
+                    I was also a tutor and piano teacher from age 17. 
+                    I am no stranger to leadership roles as well, having nominated 
+                    as class chairperson, class vice chairperson, class care representative 
+                    for two consecutive years.
+                </p>
+            </div>
+
+             <!-- Projects section (proj name, lang used, description)-->
+            <span id="proj"></span>
+            <div class="bgimg-2">
+                <div class="caption reveal" id="divider">
+                    <span class="border">Projects</span>
+                </div>
+            </div>
+
+            <!--<div class="sectionStart"></div>-->
+
+            <div class="sectionBody reveal">
+                <h4>Personal Website</h4>
+                <h5>HTML | css | javascript</h5>
+                    <p>
+                        This portfolio website built to let others learn
+                        more about my accomplishments and myself.<br/>
+                        <span class="pLink">
+                            <a target="_blank" href="https://github.com/leexuanxuan/PersonalWebsite">source code here</a>
+                        </span>
+                    </p>
+                <hr/>
+                <h4>HighSum Game</h4>
+                    <h5>java</h5>
+                        <p>
+                            A single player card game implemented within the 
+                            Integrated Development Environment (IDE), 
+                            simulates the dynamics of a poker card game 
+                            featuring a betting system. Victory in the game is 
+                            achieved when the player's hand of cards 
+                            surpasses the dealer's in overall value.<br/>
+                            <span class="pLink">
+                                <a target="_blank" href="https://github.com/leexuanxuan/HighSumCardGame">source code here</a>
+                            </span>
+                        </p>
+                    <hr/>
+                <h4>Dice game</h4>
+                <h5>java</h5>
+                    <p>
+                        Single player guessing game implemented with 
+                        java GUI programming.<br/>
+                        <span class="pLink">
+                            <a target="_blank" href="https://github.com/leexuanxuan/DiceGameWithGUI">source code here</a>
+                        </span>
+                    </p>
+            </div>
+
+            <!-- Certs section (start at image)-->
+            <span id="cert"></span>
+            <div class="bgimg-3">
+                <div class="caption reveal" id="divider">
+                    <span class="border">Certifications I Earned</span>
+                </div>
+            </div>
+
+            <div class="sectionBody reveal">
+                <h4>Introduction to Time Value of Money</h4>
+                <h5>Coursera / University of Michigan</h5>
+                    <p>
+                        corporate finance and excel modelling course
+                    </p>
+            </div>
+
+            <!-- Programming Language section (start at image) -->
+            <span id="lang"></span>
+            <div class="bgimg-4">
+                <div class="caption reveal" id="divider">
+                    <span class="border">Programming Languages</span>
+                </div>
+            </div>
+
+            <div class="sectionBody">
+                <h6>Programming Languages</h6>
+                <table class="progLangTable reveal">
+                    <tr>
+                        <td><img class="progLangIcons" src="images/htmlIcon.png"></td>
+                        <td><img class="progLangIcons" src="images/cssIcon.png"></td>
+                        <td><img class="progLangIcons" src="images/jsIcon.webp"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="progLangIcons" src="images/mySQLIcon.jpg"></td>
+                        <td><img class="progLangIcons" src="images/javaIcon.jpg"></td>
+                        <td><img class="progLangIcons" src="images/pythonIcon.png"></td>
+                    </tr>
+                </table>
+                <h6>Markup Languages & Others</h6>
+                <table class="progLangTable reveal">
+                    <tr>
+                        <td><img class="markLangIcons" src="images/XMLIcon.png"></td>
+                        <td><img class="markLangIcons" src="images/XSDIcon.png"></td>
+                        <td><img class="markLangIcons" src="images/XSLTIcon.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="markLangIcons" src="images/JSONIcon.avif"></td>
+                        <td><img class="markLangIcons" src="images/DTDIcon.jpg"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Hobbies section (images, description, name)-->
+            <span id="hobby"></span>
+            <div class="bgimg-5">
+                <div class="caption reveal" id="divider">
+                    <span class="border">How I spend my free time</span>
+                </div>
+            </div>
+
+            <div class="sectionBody reveal">
+                <h4>Reading</h4>
+                <p>
+                    I enjoy my non-fiction books with the occasional romance
+                    or Thriller. I relish curling up at home, immersed in the 
+                    pages of autobiographies, biographies, psychology, or self-help books. Among my most 
+                    memorable reads is "When Breath Becomes Air" by Paul Kalanithi.
+                </p>
+            <hr/>
+                <h4>Gaming</h4>
+                <p>
+                    One of my other favourite pastime is playing PC games 
+                    with my friends. I love a game of League of Legends or
+                    LOL: Teamfight Tactics. I also play Maplestory SEA and 
+                    The Sims 4 if I want a change of pace, or want to express
+                    myself creatively.
+                </p>
+            <hr/>
+                <h4>Sports</h4>
+                <p>
+                    I'm a double Gold certified Swimmer (Swim safer and National
+                    Survival Swimming Award), I practice Hatha & Vinyasa Yoga, and 
+                    I enjoy Rhythm Cycling (since 2020!). I've also tried my hand at
+                    Rock Climbing, Bouldering, Netball, Canoeing and Dragon Boating.
+                </p>
+            <hr/>
+                <h4>Programming</h4>
+                <p>
+                    I coded this website in my free time, to get more comfortable
+                    with web programming and to explore things outside what was taught
+                    in my course of study. I have also built a website for my younger
+                    sister to keep track of her grades, calculate her L1R4, and it's
+                    linked to web pages that details the courses she has expressed 
+                    interest in for her GCE 'O' Level examinations in the following year.
+                </p>
+            </div>
+
+            <!-- contact me section (email, linkedin?)-->
+            <span id="contact-me"></span>
+            <div class="bgimg-6">
+                <div class="caption reveal" id="divider">
+                    <span class="border">Lets build something <b>Together</b></span>
+                </div>
+            </div>
+
+            <div class="sectionBody reveal">
+                <table class="progLangTable">
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.linkedin.com/in/xuan-xuan-lee-381a25231/">
+                                <img class="contactMeIcons" src="images/linkedInIcon.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=leexuanxuanx@gmail.com&su=Subject&body=Hey%C2%A0there&bcc=someone.else@example.com">
+                                <img class="contactMeIcons" src="images/gmailIcon.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://github.com/leexuanxuan">
+                                <img class="contactMeIcons" src="images/gitHubIcon.png">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Scroll to Top Button -->
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+        <script src="js/reveal.js"></script>
+        <script src="js/scrollToTopButton.js"></script>
+    </body>
+</html>

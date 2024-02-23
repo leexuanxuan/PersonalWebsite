@@ -1,0 +1,314 @@
+#about {
+  height: 600px;
+}
+
+#proj {
+  min-height: fit-content;
+
+}
+
+#cert {
+  min-height: fit-content;
+
+}
+
+#lang {
+  height: 600px;
+
+}
+
+#hobby {
+  height: 600px;
+
+}
+
+#contact-me {
+  height: 600px;
+
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+  background-image: url("../images/profilePicture.jpg");
+  min-height: 650px;
+}
+
+.bgimg-2 {
+  background-image: url("../images/projectsBG.jpg");
+  min-height: 200px;
+}
+
+.bgimg-3 {
+  background-image: url("../images/certsBG.jpg");
+  min-height: 200px;
+}
+
+.bgimg-4 {
+  background-image: url("../images/progLangBG.avif");
+  min-height: 200px;
+}
+
+.bgimg-5 {
+  background-image: url("../images/cafeEntrance.jpg");
+  min-height: 200px;
+}
+
+.bgimg-6 {
+  background-image: url("../images/sidePictureWhiteDress.jpg");
+  min-height: 200px;
+}
+
+/* nav bar area */
+.navBar {
+  text-align: center;
+  background-color:black;
+  padding:5px 0; /*padding to top n bottom*/
+}
+
+.navBar a{
+  margin-right: 20px;
+  font: 15px sans-serif;
+  color: #fff;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  background-color: #333; /* Change background color on hover */
+}
+
+/*Here's me*/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+/* Welcome statement*/
+.caption span.oneLiner {
+  background-color: rgb(17, 17, 17,0.8);
+  display: inline-block;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+}
+
+.caption span.border {
+  color: #fff;
+  background-color: rgb(0, 0, 0, 0.8);
+  display: inline-block;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  text-align: center;
+  padding: 2% 5%;
+  max-width: 80%; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the element horizontally */
+}
+
+
+/* intro para*/
+div.intro{
+  color: #777;
+  font-size: medium;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+/*grey colour decorater at the 
+start of body paragraphs*/
+.sectionStart {
+  color: #fff;
+  background-color: #393939;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  text-align: center;
+  padding: 25px 50px;
+  text-align: justify;
+}
+
+/*project para*/
+.sectionBody {
+  color: black;
+  font-size: medium;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+  box-sizing: border-box; /* Include padding and border in the 
+  element's total width and height */
+}
+
+
+.sectionBody .pWeb {
+  font-size: 14px;
+  color: #9C6559;
+}
+
+.sectionBody .pWeb:hover {
+  font-size: 14px;
+  color: #d1b1b1;
+  text-decoration: none;
+}
+
+.sectionBody h4 h5 p span.pLink {
+  font-size: 14px;
+  color: #9C6559;
+}
+
+.sectionBody p span.pLink a{
+  font-size: 14px;
+  color: #9C6559;
+  text-decoration: none;
+}
+
+.sectionBody p span.pLink a:hover{
+  font-size: 14px;
+  color: #d1b1b1;
+  text-decoration: none;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+h6 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+}
+
+.sectionBody .progLangTable {
+  width: 100%; /* Set the width to 100% or adjust as needed */
+  max-width:700px; /* Set a maximum width for your content */
+  margin: 0 auto; /* Center the table horizontally */
+  text-align: center; /* Center the content inside the table cells */
+}
+
+
+.sectionBody .progLangIcons{
+  max-width: fit-content;
+  max-height: 200px;
+  max-width: 100%; /* Set the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-collapse: collapse;
+}
+
+.sectionBody .markLangIcons{
+  max-width: fit-content;
+  max-height: 150px;
+  max-width: 100%; /* Set the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-collapse: collapse;
+}
+
+
+.sectionBody .contactMeIcons{
+  max-width: 100px;
+  max-height: 100px;
+  height: auto; /*maintain aspect ratio*/
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*
+.reveal {
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: 200ms;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+    background-attachment: scroll;
+  }
+}
+  
+/* Add this to your existing CSS */
+
+/* Initially set opacity to 0 for all reveal elements */
+.reveal {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+/* When the element has the "active" class, set opacity to 1 */
+.reveal.active {
+  opacity: 1;
+}
+
+/* Apply the "reveal" class to each specific section */
+.body.reveal {
+  min-height: 800vh; /* Adjust as needed */
+}
+
+/* Styles for the about section */
+#about.reveal.active .intro,
+#about.reveal.active h3 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.intro,
+#about.reveal h3 {
+  transform: translateY(0);
+  opacity: 0;
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+/* Scroll to Top Button Styles */
+#scrollToTopBtn {
+  display: none; /* Initially hide the button */
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #ffa5f7;
+}
