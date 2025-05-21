@@ -27,27 +27,27 @@ window.addEventListener("scroll", () => {
   });
 });
 /* =============== contact (email) ==================== */
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contact-form");
-  const confirmation = document.querySelector(".confirmation");
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("KfUQ7H9rObvt-rPFa");
 
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
+    const form = document.getElementById("contact-form");
+    const confirmation = document.querySelector(".confirmation");
 
-      emailjs.sendForm('service_r6r5xxj', 'template_bazxd1v', this)
-        .then(() => {
-          confirmation.textContent = "Message sent successfully!";
-          confirmation.style.color = "green";
-          form.reset();
-        })
-        .catch((error) => {
-          confirmation.textContent = "Failed to send message. Please try again.";
-          confirmation.style.color = "red";
-          console.error("EmailJS Error:", error);
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm("service_r6r5xxj", "template_bazxd1v", this)
+                .then(() => {
+                    confirmation.textContent = "Message sent successfully!";
+                    confirmation.style.color = "green";
+                    form.reset();
+                })
+                .catch((error) => {
+                    confirmation.textContent = "Failed to send message. Please try again.";
+                    confirmation.style.color = "red";
+                    console.error("EmailJS error:", error);
+                });
         });
-    });
-  }
+    }
 });
-
-
