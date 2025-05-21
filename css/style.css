@@ -685,7 +685,7 @@ h3.my-profession
 }
 .portfolio .portfolio-item-inner
 {
-    border: 6 px solid var(--bg-black-100);
+    border: 0.5px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -822,8 +822,17 @@ h3.my-profession
 }
 .contact .contact-form .btn
 {
+    flex: 0 0 50%;
+    max-width: 50%;
     height: 50px;
     padding: 0 50px;
+}
+.confirmation
+{
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: capitalize;
 }
 /* reveal */
 /* Initially set opacity to 0 for all reveal elements */
