@@ -26,3 +26,28 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+/* =============== contact (email) ==================== */
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("KfUQ7H9rObvt-rPFa");  // Your public key
+
+    const form = document.getElementById("contact-form");
+    const confirmation = document.querySelector(".confirmation");
+
+    if (form && confirmation) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm("service_r6r5xxj", "template_bazxd1v", form)
+                .then(function (response) {
+                    confirmation.textContent = "Message sent!";
+                    confirmation.style.color = "green"; 
+                    form.reset(); 
+                }, function (error) {
+                    confirmation.textContent = "Failed to send message. Please try again.";
+                    confirmation.style.color = "red";
+                    console.error("EmailJS Error:", error);
+                });
+        });
+    }
+});
+
