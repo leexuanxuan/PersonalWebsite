@@ -27,9 +27,6 @@ window.addEventListener("scroll", () => {
   });
 });
 /* =============== contact (email) ==================== */
-import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
-emailjs.init('KfUQ7H9rObvt-rPFa');
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
   const confirmation = document.querySelector(".confirmation");
