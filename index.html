@@ -567,7 +567,16 @@
         <!-- ==== JS Files ==== -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+           (function(){
+              emailjs.init({
+                publicKey: "KfUQ7H9rObvt-rPFa",
+              });
+           })();
+        </script>
         <script src="js/script.js"></script>
         <script src="js/reveal.js"></script>
         <script src="js/style-switcher.js"></script>
