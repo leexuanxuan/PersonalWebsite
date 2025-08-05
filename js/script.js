@@ -1,6 +1,6 @@
 /* =============== typing animation ================= */
 var typed = new Typed(".typing", {
-    strings:["","an Aspiring Quant", "a Penetration Tester", "a CS Student"],
+    strings:["","a Red Team Pentester", "an Aspiring Quant", "a CS Student"],
     typeSpeed:100,
     BackSpeed:100,
     loop:true
@@ -51,3 +51,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
